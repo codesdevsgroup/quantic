@@ -1,1 +1,23 @@
-﻿
+﻿:root {
+    --primary-color: #19C37D;
+    --text-color: #363636;
+    /* font-family: 'Inter', sans-serif; */
+}
+
+
+/* home */
+
+#home ul {
+    font-family: 'Inter', sans-serif;
+}
+
+#home ul button{
+    margin-left: 40px;
+    background-color: var(--primary-color);
+    padding: 10px;
+}
+
+#home ul button a{
+    text-decoration: none;
+    color: var(--text-color);
+}
