@@ -3,15 +3,32 @@
     --text-color: #363636;
     /* font-family: 'Inter', sans-serif; */
 }
-
+.btn,
+.btn a {
+    border-radius:0%;
+    font-family: 'Inter', sans-serif;
+}
+.btn:active {
+    box-shadow: 0px 0px 5px 1px var(--primary-color);
+    border-color: var(--primary-color) !important;
+}
+.btn:hover{
+    border-color: var(--primary-color) !important;
+}
 
 /* home */
+#home {
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+}
 
 #home ul {
     font-family: 'Inter', sans-serif;
 }
+
 #home ul li{
-    margin-right: ;
+    margin-right: 24px;
 }
 
 #home ul button{
@@ -23,4 +40,44 @@
 #home ul button a{
     text-decoration: none;
     color: var(--text-color);
+}
+
+.home {
+    padding-top: 20%;
+}
+
+#home .text {
+    padding-top: 20%;
+    color: var(--text-color);
+    width: 388.54px;
+}
+
+#home .text h1 {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 55px;
+}
+
+#home .text h2 {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 80px;
+}
+
+#home .text p {
+
+}
+
+#home .text button {
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    background-color: var(--primary-color);
+    width: 171.9px;
+    height: 47.96px;
 }
