@@ -3,6 +3,8 @@
     --text-color: #363636;
     /* font-family: 'Inter', sans-serif; */
 }
+
+/* buttons */
 .btn,
 .btn a {
     border-radius:0%;
@@ -14,6 +16,9 @@
 }
 .btn:hover{
     border-color: var(--primary-color) !important;
+}
+.btn img {
+    margin-left: 5px;
 }
 
 /* home */
@@ -67,7 +72,12 @@
 }
 
 #home .text p {
-
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    margin-bottom: 24px;
 }
 
 #home .text button {
