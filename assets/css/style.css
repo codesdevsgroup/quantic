@@ -5,17 +5,29 @@
 }
 
 /* buttons */
-.btn,
-.btn a {
-    border-radius:0%;
+.btn a{
     font-family: 'Inter', sans-serif;
+    background-color: var(--primary-color);
+    text-decoration: none;
+    color: var(--text-color);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
 }
+
+.btn {
+    background-color: var(--primary-color);
+    border-radius:0%;
+}
+
 .btn:active {
     box-shadow: 0px 0px 5px 1px var(--primary-color);
     border-color: var(--primary-color) !important;
+    background-color: var(--primary-color) !important;
 }
 .btn:hover{
     border-color: var(--primary-color) !important;
+    background-color: var(--primary-color) !important;
 }
 .btn img {
     margin-left: 5px;
@@ -42,13 +54,6 @@
 
 #home ul button{
     margin-left: 40px;
-    background-color: var(--primary-color);
-    padding: 10px;
-}
-
-#home ul button a{
-    text-decoration: none;
-    color: var(--text-color);
 }
 
 .home {
@@ -85,13 +90,23 @@
 }
 
 #home .text button {
-    
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 19px;
-    background-color: var(--primary-color);
     width: 171.9px;
     height: 47.96px;
+}
+
+/* presentation */
+.text-presentation {
+    width: 555px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+}
+
+.text-presentation h2 {
+    font-size: 40;
+    width: 380px;
+}
+
+.text-presentation p {
+    font-size: 16px;
 }
