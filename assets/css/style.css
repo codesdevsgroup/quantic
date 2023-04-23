@@ -28,6 +28,10 @@
     min-height: 100vh;
 }
 
+#home nav{
+    background-color: #fff;
+}
+
 #home ul {
     font-family: 'Inter', sans-serif;
 }
