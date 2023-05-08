@@ -3,7 +3,9 @@
     --text-color: #363636;
     /* font-family: 'Inter', sans-serif; */
 }
-
+body{
+    background: #F9F8F8;
+}
 /* buttons */
 .btn a{
     font-family: 'Inter', sans-serif;
@@ -125,7 +127,9 @@
 .services-text{
     width: 875px;
     height: 110px;
-    margin: auto;
+    margin-inline: auto;
+    margin-bottom: 80px;
+
 }
 
 .services-text h2 {
@@ -144,7 +148,17 @@
     font-size: 20px;
     line-height: 30px;
     margin-top: 16px;
-
+}
+.services-items{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px 16px;
+    gap: 8px;
+    width: 361px;
+    height: 90px;
+    background: #ffffff;
+    margin-block: 16px;
 }
 
 /* abaut  */
