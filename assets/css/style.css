@@ -78,7 +78,7 @@ body{
     font-family: 'Nunito';
     font-style: normal;
     font-weight: 600;
-    font-size: 60px;
+    font-size: 54px;
     line-height: 80px;
 }
 
@@ -117,7 +117,9 @@ body{
 .text-presentation p {
     font-size: 16px;
 }
-
+.text-presentation button {
+    padding: 8px 24px;
+}
 /* services  */
 
 #services{
@@ -159,6 +161,16 @@ body{
     height: 90px;
     background: #ffffff;
     margin-block: 16px;
+}
+
+#services .lb{
+    margin-top: 110px;
+}
+#services .rb{
+    margin-top: 110px;
+}
+.service-img img {
+    
 }
 
 /* abaut  */
