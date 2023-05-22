@@ -163,14 +163,13 @@ body{
     margin-block: 16px;
 }
 
-#services .lb{
-    margin-top: 110px;
-}
-#services .rb{
-    margin-top: 110px;
-}
-.service-img img {
+#services .lb,
+#services.rb {
     
+}
+
+.service-img img {
+
 }
 
 /* abaut  */
