@@ -202,3 +202,13 @@ body{
 .abaut-img{
     margin-right: 120px;
 }
+
+/* footer */
+#footer{
+    margin-top: 160px;
+    background: #002C34;
+    align-items: center;
+    padding: 80px 156px;
+    height: 468px;
+    color: #F9F8F8;
+}
