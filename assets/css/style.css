@@ -164,12 +164,33 @@ body{
 }
 
 #services .lb,
-#services.rb {
-    
+#services .rb {
+    margin-top: 80px;
 }
 
-.service-img img {
+.service-img button {
+    margin: auto;    
+}
 
+/* contact */
+.contact{
+    margin-top: 120px;
+    width: 1131px;
+    height: 597px;
+    left: 153px;
+    top: 3742px;
+    background: #002C34;
+    border-radius: 32px;
+    color: #F9F8F8;
+}
+
+.contact-a{
+    background-image: url(../img/quantic-tribal.png);
+    background-repeat: no-repeat;
+}
+
+.contact-a img{
+    margin-top: 14px;
 }
 
 /* abaut  */
