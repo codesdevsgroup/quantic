@@ -10,25 +10,28 @@ if (current_user_can('edit_posts')) {
 ?>
 
   <div id="edit_posts" class="container">
-    <div class="row">
-      <div class="col-12">
-        <div class="p-1">
-          <h2>Cadastrar Novo Produto</h2>
-          <form method="post" enctype="multipart/form-data">
-            <!-- Campo para o título do post -->
-            <label for="post_title">Título:</label>
-            <input type="text" name="post_title" required>
-            <br>
-            <!-- Campo para a imagem em destaque -->
-            <label for="post_thumbnail">Imagem em Destaque:</label>
-            <input type="file" name="post_thumbnail" accept="image/*" required>
-            <br>
-            <!-- Botão de envio -->
-            <input type="submit" name="submit_product" value="Cadastrar Produto">
-          </form>
-        </div>
+    <div id="admprod">
+      <div class="grid">
+        <h2>Cadastrar Novo Produto</h2>
+        <form method="post" enctype="multipart/form-data">
+          <!-- Campo para o título do post -->
+          <label for="post_title">Título:</label>
+          <input type="text" name="post_title" required>
+          <br>
+          <!-- Campo para a imagem em destaque -->
+          <label for="post_thumbnail">Imagem em Destaque:</label>
+          <input type="file" name="post_thumbnail" accept="image/*" required>
+          <!-- Checkbox para a subcategoria "action-figure" -->
+          <div>
+            <input type="checkbox" name="action_figure" value="1">
+            <label for="action_figure">Action Figure</label>
+          </div>
+          <!-- Botão de envio -->
+          <input type="submit" name="submit_product" value="Cadastrar Produto">
+        </form>
       </div>
     </div>
+  
     <div class="edit_post">
       <?php
       // Processar o formulário quando enviado
@@ -46,6 +49,11 @@ if (current_user_can('edit_posts')) {
             'post_category' => array(get_cat_ID('produtos')), // Categoria 'produtos'
           );
 
+          // Verificar se a caixa de seleção "Action Figure" está marcada
+          if (isset($_POST['action_figure']) && $_POST['action_figure'] == 1) {
+            $new_post['post_category'][] = get_cat_ID('action-figure');
+          }
+
           // Inserir a nova postagem
           $new_post_id = wp_insert_post($new_post);
 
@@ -55,21 +63,21 @@ if (current_user_can('edit_posts')) {
             require_once ABSPATH . 'wp-admin/includes/file.php';
             require_once ABSPATH . 'wp-admin/includes/media.php';
 
-            $attachment_id = media_handle_upload('post_thumbnail', $new_post_id);
+          $attachment_id = media_handle_upload('post_thumbnail', $new_post_id);
 
-            if (is_wp_error($attachment_id)) {
-              // Erro ao carregar a imagem
-              echo 'Erro ao carregar a imagem: ' . $attachment_id->get_error_message();
-            } else {
-              // Definir a imagem em destaque
-              set_post_thumbnail($new_post_id, $attachment_id);
-              echo 'Produto cadastrado com sucesso!';
-            }
+          if (is_wp_error($attachment_id)) {
+            // Erro ao carregar a imagem
+            echo 'Erro ao carregar a imagem: ' . $attachment_id->get_error_message();
           } else {
-            echo 'Erro ao cadastrar o produto.';
+            // Definir a imagem em destaque
+            set_post_thumbnail($new_post_id, $attachment_id);
+            echo 'Produto cadastrado com sucesso!';
           }
-          } else {
-            echo 'Por favor, preencha todos os campos obrigatórios.';
+        } else {
+          echo 'Erro ao cadastrar o produto.';
+        }
+        } else {
+          echo 'Por favor, preencha todos os campos obrigatórios.';
           }
         }
         } else {

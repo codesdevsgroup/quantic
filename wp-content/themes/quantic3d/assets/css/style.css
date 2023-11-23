@@ -352,7 +352,139 @@ footer .navbar_footer li a{
   }
 }
 
-#prod_edit img {
-  width: 480px;
-  height: 720px;
+/* Estilo para o formulário de cadastro de produtos com ID "admprod" */
+#admprod {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#admprod .grid {
+  max-width: 500px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#admprod h2 {
+  margin-bottom: 10px;
+}
+
+#admprod form {
+  display: flex;
+  flex-direction: column;
+}
+
+#admprod label {
+  margin-bottom: 5px;
+}
+
+#admprod input {
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+#admprod input[type="checkbox"] {
+  margin-bottom: 10px;
+}
+
+#admprod input[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+  width: 150px;
+}
+
+#admprod input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+
+
+.edit_post {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.edit_post h2 {
+  color: #333;
+}
+
+.edit_post ul {
+  list-style: none;
+  padding: 0;
+}
+
+.edit_post li {
+  margin-bottom: 10px;
+}
+
+.edit_post a {
+  text-decoration: none;
+  color: #007bff;
+  margin-left: 10px;
+}
+
+.edit_post a:hover {
+  text-decoration: underline;
+  color: #0056b3;
+}
+
+.edit_post form {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.edit_post input[type="submit"] {
+  background-color: #dc3545;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.edit_post input[type="submit"]:hover {
+  background-color: #c82333;
+}
+
+/* Editando o post */
+
+#custom-edit-post {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #f0f0f0;
+}
+
+#custom-edit-post h2 {
+  color: #333;
+}
+
+#prod_edit {
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+#prod_edit label {
+  margin-bottom: 5px;
+}
+
+#prod_edit input[type="text"],
+#prod_edit input[type="checkbox"],
+#prod_edit input[type="button"],
+#prod_edit input[type="submit"] {
+    margin-bottom: 10px;
+}
+#prod_edit .img_prod_edit img {
+  width: 350px;
+  height: auto;
+  padding-left: 80px;
 }
