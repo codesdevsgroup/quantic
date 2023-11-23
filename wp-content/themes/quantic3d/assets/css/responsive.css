@@ -1,0 +1,62 @@
+@media (min-width: 600px) {
+  #main-menu{
+    margin-left: 43%;
+  }
+}
+@media (max-width: 600px) {
+  #top-menu nav{
+    height: auto;
+  }
+  #main-menu{
+    font-size: 22px;
+    height: auto;
+  }
+  #menu-main-menu{
+    text-align: center;
+  }
+  #presset {
+    background-image: linear-gradient(to top, #000000, #582db5);
+    width: auto;
+    margin: 0 auto;
+    color:#F9F8F8;
+    border-radius: 0px;
+    position: relative;
+  }
+  #print_3d {
+    margin-block: 40px 40px;
+  }
+  #process .card_process {
+    width: 300px;
+    margin: 0 auto !important;
+    height: 260px;
+    margin-block: 15px !important;
+    line-height: 26px;
+  }
+  #text_print_3d {
+    font-size: 18px;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+  }
+  iframe{
+    width: auto;
+    height: auto;
+  }
+  .prototipag-text{
+    margin-top: 14px;
+  }
+  footer{
+    margin-top: 40px;
+  }
+  .grid_text_modalbf {
+    width: auto;
+  }
+  #about #about_text {
+    width: auto;
+  }
+  .contact-a img {
+    margin-top: -20px;
+  }
+  #list_product{
+    margin-top: 40px;
+  }
+}

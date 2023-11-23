@@ -1,0 +1,65 @@
+/* Estilos básicos para o formulário */
+#primary{
+  margin-top: 75px;
+}
+
+#primary form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#primary label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+#primary input,
+#primary textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+#primary #your-idea {
+  height: 160px;
+}
+
+#primary .post_form {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 15px;
+  cursor: pointer;
+  border: none;
+  margin-top: 20px;
+  width: 120px;
+}
+#primary .post_form:hover {
+  background-color: #3e8e41;
+}
+#primary .post_form:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+#primary .post_form:focus {
+  outline: none;
+}
+#primary .post_form:disabled {
+  background-color: #ccc;
+  color: #666;
+  cursor: not-allowed;
+}
+#wp_form a {
+  width: 230px;
+  text-decoration: none;
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 6px 12px;
+  margin-top: 15px;
+}
+#wp_form h6 {
+  width: 210px;
+  margin-top: 10px;
+  
+}

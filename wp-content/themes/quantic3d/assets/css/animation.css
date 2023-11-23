@@ -1,0 +1,38 @@
+/* Animação da digitação na home */
+
+#container {
+  display: flex;
+}
+
+#textoDigitado {
+  font-family: 'ARTechni' !important;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+}
+
+#cursor {
+  animation: blink-caret 0.5s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+      width: 0;
+  }
+  to {
+      width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+      visibility: visible;
+  }
+  50% {
+      visibility: hidden;
+  }
+}
+
+/* animação home services */
+

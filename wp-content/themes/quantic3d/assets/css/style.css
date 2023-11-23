@@ -1,0 +1,358 @@
+@font-face {
+  font-family: 'Flynn';
+  src: url(../fonts/Flynn.otf);
+}
+@font-face {
+  font-family: 'Saira';
+  src: url(../fonts/SairaSemiCondensed.ttf);
+}
+@font-face {
+  font-family: 'ARTechni';
+  src: url(../fonts/ARTechni.ttf);
+}
+
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 6px; /* Ajuste a altura da barra de carregamento conforme necessário */
+  background-color: var(--primary-color);
+  z-index: 9999;
+  animation: progress 3s linear infinite; /* Ajuste a duração conforme necessário */
+}
+
+@keyframes progress {
+  0% {
+      width: 0;
+  }
+  100% {
+      width: 100%;
+  }
+}
+
+:root {
+	--primary-color: #004D97;
+  --secondary-color: #582db5e7;
+	--text-color: #363636;
+}
+body{
+	background: #F9F8F8;
+  font-family: 'ARTechni' !important;
+}
+h1, h2, h3, h4, h5, h6{
+  font-family: 'Saira' !important;
+}
+p {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.m-top-50px{
+  margin-top: 50px;
+}
+button{
+  background-color: var(--secondary-color);
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px 8px 16px;
+}
+button a{
+  color: #fff;
+  text-decoration: none;
+}
+
+.custom-shadow {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Personalize a espessura (20px) e a cor da sombra conforme necessário */
+}
+
+/* Menu */
+#top-menu nav{
+  background-color: #582db5;
+  height: 70px;
+}
+#main-menu{
+	font-size: 16px;
+  height: 70px;
+}
+#menu-main-menu li a{
+  padding-bottom: 0;
+}
+#menu-main-menu li a{
+  font-style:unset;
+  color: #fff;
+}
+#menu-main-menu li a:hover, 
+#presset a:hover,
+.redes_sociais a:hover,
+#menu-main-menu-1 li a:hover{
+  transform: scale(1.1);
+  text-decoration: underline #fff;
+  transition: transform 0.2s;
+}
+
+/* home */
+
+#grid_text_home{
+  padding: 4px;
+  margin-top: 60vh;
+  z-index: 999;
+  color: black;
+  background: rgb(255,255,255);
+  background: -moz-linear-gradient(0deg, rgba(255,255,255,0.2819327560125613) 0%, rgba(88,88,88,0) 100%);
+  background: -webkit-linear-gradient(0deg, rgba(255,255,255,0.2819327560125613) 0%, rgba(88,88,88,0) 100%);
+  background: linear-gradient(0deg, rgba(255,255,255,0.2819327560125613) 0%, rgba(88,88,88,0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#585858",GradientType=1); 
+  font-size: 26px;
+  width: 380px;
+}
+#home > div {
+  height: 100vh;
+}
+
+/* presset */
+#presset {
+  background: rgb(28,28,28);
+  background: linear-gradient(0deg, rgba(28,28,28,1) 2%, rgba(56,20,133,1) 25%, rgba(88,45,181,1) 100%); 
+  position: absolute;
+  top:96%;
+  margin-left: 200px;
+  left: 0;
+  right: 0;
+  width: 750px;
+  margin: 0 auto;
+  color:#F9F8F8;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+/* print_3d */
+
+#print_3d{
+  margin-block: 200px 100px;
+}
+#print_3d .text_print_3d{
+  line-height: 20px;
+}
+
+/* process */
+
+#process #cards-process{
+  margin-bottom: 40px;
+}
+
+#process .card_process img {
+  display: block;
+  margin: 0 auto;
+}
+
+#process .card_process{
+  width: 200px;
+  margin: 0 auto !important;
+  height: 330px;
+  margin-block: 50px !important;
+  line-height: 18px;
+}
+
+#cards-process img {
+  width: 30%;
+  height: 30%;
+  border-radius: 10px;
+}
+
+/* text_print_3d */
+
+.img_print_3d{
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+
+#text_print_3d{
+  background-color: var(--primary-color);
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 60px;
+  padding-block: 10px;
+}
+
+/* about */
+
+#about {
+  margin-block: 100px;
+}
+#about #about_text{
+  line-height: 22px;
+  width: 484px; 
+}
+.contact{
+  margin-top: 120px;
+  background: #002C34;
+  border-radius: 32px;
+  color: #F9F8F8;
+}
+.contact-a{
+  background-image: url(../img/quantic-tribal.png);
+  background-repeat: no-repeat;
+}
+.contact-a img{
+  margin-top: 14px;
+}
+.contact .contact_text a{
+  color: #fff;
+  text-decoration: none;
+}
+
+/* footer */
+
+footer{
+  width: 100%;
+  background-color: var(--secondary-color);
+  padding-block: 30px 10px;
+  margin-top: 120px;
+}
+footer .redes_sociais{
+  color: #fff;
+}
+footer .redes_sociais a{
+  color: #fff;
+  text-decoration: none;
+}
+footer .logo_footer{
+  margin-top: 20px;
+}
+footer nav{
+  margin-top: 40px;
+}
+footer .navbar_footer{
+  margin-top: 0;
+}
+footer .navbar_footer li{
+  padding-inline: 8px;
+}
+footer .navbar_footer li a{
+  color: #fff;
+  text-decoration: none ;
+}
+
+/* botão de whatsapp */
+
+.whatsapp-button {
+  position: fixed;
+  bottom: 10px; /* Ajuste a posição vertical conforme necessário */
+  right: 25px; /* Ajuste a posição horizontal conforme necessário */
+  z-index: 9999; /* Garante que o botão esteja acima de outros elementos */
+}
+.whatsapp-button img {
+  width: 60px; /* Tamanho da imagem do botão */
+  height: auto;
+  border: none;
+}
+
+
+/* Products */
+.custom-thumbnail-shadow {
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4); /* Substitua isso com seu estilo de sombra desejado */
+}
+
+#edit_posts{
+  margin-block: 60px;
+}
+.edit_post{
+  margin-top: 50px;
+}
+.product-card h3 {
+  margin-top: 12px;
+  margin-bottom: 30px;
+}
+
+/* modal balckFriday */
+#blackFridayModal {
+  margin-top: 100px;
+}
+#blackFridayModal .modal-content {
+  background: url(./../img/bf.webp);
+  background-size: cover;
+  
+}
+#blackFridayModal .modal-content h5{
+  font-size: 26px;
+  font-weight: bold;
+  color: #fff;
+  background-color: red;
+  padding: 2px;
+  padding-inline: 16px;
+  border-radius: 8px;
+}
+
+#blackFridayModal .modal-content p{
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+}
+#blackFridayModal span{
+  color: rgb(171, 214, 28);
+}
+.modal-header {
+  border-bottom: none;
+}
+
+.modal-footer {
+  border-top: none;
+}
+.grid_text_modalbf {
+  background: rgb(2,140,182);
+  background: linear-gradient(90deg, rgba(2,140,182,1) 47%, rgba(9,9,121,1) 100%);
+  width: 500px;
+  border-radius: 6px;
+  margin-top: 25px;
+}
+
+
+/* Adicione estilos de ampliação da imagem */
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+  color: #fff;
+}
+
+
+.enlarged-image {
+  max-width: 90%;
+  max-height: 90%;
+  margin: auto;
+}
+
+#zoom-frame {
+  position: absolute;
+  border: 2px solid #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  background: transparent;
+  display: flex;
+  pointer-events: none;
+}
+
+/* Estilos padrão para todos os tamanhos de tela */
+.product-image {
+  width: 270px;
+  height: 480px;
+}
+
+/* Estilos para dispositivos desktop com largura de tela igual ou superior a 768 pixels */
+@media screen and (max-width: 768px) {
+  .product-image {
+    width: 150px;
+    height: 270px;
+  }
+}
+
+#prod_edit img {
+  width: 480px;
+  height: 720px;
+}
