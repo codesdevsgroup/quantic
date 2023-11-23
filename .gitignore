@@ -7,7 +7,6 @@
 /wp-content/themes/index.php
 /wp-includes/
 /wp-includes
-/index.php
 /license.txt
 /readme.html
 /wp-*.php
@@ -27,3 +26,4 @@ wp-config.php
 index.php
 wp-admin.zip
 wp-activate.php
+\wp-content\upgrade
