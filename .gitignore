@@ -23,7 +23,6 @@ wp-config.php
 *.log
 /wp-content/plugins
 .htaccess
-index.php
 wp-admin.zip
 wp-activate.php
 \wp-content\upgrade
