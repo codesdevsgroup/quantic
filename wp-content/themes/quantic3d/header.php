@@ -10,8 +10,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   
   <title><?php wp_title('«', true, 'right'); ?> <?php bloginfo('name'); ?></title>
-  <meta name="description" content="Quantic 3D é uma empresa especializada em impressões 3D e prototipagem de produtos industriais. Oferecemos soluções de fabricação personalizadas e action figures sob demanda. Transformamos suas ideias em realidade tridimensional.">
   <meta name="author" content="Quantic 3D">
+  <meta name="description" content="Quantic 3D é uma empresa especializada em impressões 3D e prototipagem de produtos industriais. Oferecemos soluções de fabricação personalizadas e action figures sob demanda. Transformamos suas ideias em realidade tridimensional.">
 
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
