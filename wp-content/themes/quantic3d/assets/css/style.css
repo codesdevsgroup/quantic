@@ -61,7 +61,7 @@ button a{
 }
 
 .custom-shadow {
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Personalize a espessura (20px) e a cor da sombra conforme necessário */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
 /* Menu */
@@ -516,4 +516,39 @@ footer .navbar_footer li a{
 .pagination a:hover {
   background-color: var(--secondary-color);
   color: #fff;
+}
+
+
+/* Pagina de posts */
+
+.post-cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.post-card {
+  margin: 10px;
+  padding: 15px;
+  width: 300px;
+  height: 670px;
+}
+
+.post-thumbnail img {
+  width: 200px;
+  height: auto;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 10px;
+  
+}
+
+.post-content h3 {
+  margin-top: 0;
+}
+
+.post-content p {
+  margin-bottom: 0;
+}
+#post-modal-content {
+  max-height: 80vh; /* Define a altura máxima como 80% da altura da viewport */
+  overflow-y: auto; /* Adiciona uma barra de rolagem vertical se necessário */
 }

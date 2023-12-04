@@ -29,7 +29,7 @@
 </div>
 
 <!-- Modal blackFridayModal -->
-<div class="modal fade" id="blackFridayModal" tabindex="-1" aria-labelledby="blackFridayModalLabel" aria-hidden="true">
+<!-- <div class="modal fade" id="blackFridayModal" tabindex="-1" aria-labelledby="blackFridayModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <div class="modal-header">
@@ -60,4 +60,4 @@
       </div>
     </div>
   </div>
-</div>
+</div> -->

@@ -22,7 +22,7 @@ endwhile;
         $args = array(
           'post_type'       => 'post', // Defina o tipo de postagem como 'post'
           'posts_per_page'  => 8, // -1 para obter todas as postagens, você pode definir um número específico se preferir
-          'category_name'   => 'produtos', // Nome da categoria 'produtos'
+          'category_name'   => 'action-figure',
           'paged'           => $paged,
         );
 
@@ -110,7 +110,7 @@ endwhile;
     var offsetX = e.pageX - $enlargedImage.offset().left;
     var offsetY = e.pageY - $enlargedImage.offset().top;
 
-    var zoomFrameSize = 300; // Ajuste o tamanho do quadro de zoom conforme necessário
+    var zoomFrameSize = 300;
     var zoomFactor = 4; // Fator de zoom
 
     // Normaliza as coordenadas em relação às dimensões da imagem original

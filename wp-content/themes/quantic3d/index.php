@@ -53,7 +53,7 @@
       <a class="nav-link scr_left_slow_1" href="#prototipag"><h3>Prototipagem Industrial</h3></a>
     </div>
     <div class="col-12 col-sm-3 p-1 p-sm-4 scr_left_slow_2">
-      <a class="nav-link" href="./index.php/product/"><h3>Action Figures</h3></a>
+      <a class="nav-link" href="./index.php/produtos-action-figure/"><h3>Action Figures</h3></a>
     </div>
     <div class="col-12 col-sm-3 p-1 p-sm-4 scr_left_slow_3">
       <a class="nav-link" href="http://"><h3>Outros Serviços</h3></a>
@@ -237,17 +237,6 @@
 
   </div>
 </section>
-
-<div class="container">
-  <?php
-    if (have_posts()){
-      while (have_posts()) {
-        the_post();
-        the_content();
-      }
-    }
-  ?>
-</div>
 
 <?php get_template_part('modal'); ?>
 <?php get_footer(); ?>

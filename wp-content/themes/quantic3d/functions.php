@@ -154,14 +154,32 @@ function process_custom_form_submission() {
     exit;
 }
 
-
 function custom_image_quality($quality) {
     return 100; // Define a qualidade da imagem para 100%
 }
 add_filter('jpeg_quality', 'custom_image_quality');
 add_filter('wp_editor_set_quality', 'custom_image_quality');
 
-function custom_png_compression() {
+/* function custom_png_compression() {
   return 9; // Define a compressão PNG para o valor desejado (geralmente entre 0 e 9)
 }
-add_filter('wp_editor_set_quality', 'custom_png_compression');
+add_filter('wp_editor_set_quality', 'custom_png_compression'); */
+
+add_filter('page_template_hierarchy', function($templates){
+  foreach ($templates as &$tpl) {
+      $tpl = 'custom-pages/' . $tpl;
+  }
+  return $templates;
+});
+
+/*  */
+function load_post_content() {
+  $post_id = $_POST['post_id'];
+  $post = get_post($post_id);
+
+  echo apply_filters('the_content', $post->post_content);
+  die();
+}
+
+add_action('wp_ajax_load_post_content', 'load_post_content');
+add_action('wp_ajax_nopriv_load_post_content', 'load_post_content');

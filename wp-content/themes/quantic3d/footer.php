@@ -89,11 +89,6 @@
         }
     };
   </script>
-  <script src="/assets/js/wow.min.js"></script>
-  <script>
-    new WOW().init();
-  </script>
-
   <?php wp_footer(); ?>
   <div id="preloader"></div>
 </body>
